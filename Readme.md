@@ -18,7 +18,7 @@ A RESTful API built using Node.js, Express, and MongoDB that allows users to sig
 - Tools: dotenv, bcryptjs, Postman
 
 ## 📁 Folder Structure:
-
+```
 ├── config/
 │ └── db.js
 ├── controllers/
@@ -38,6 +38,7 @@ A RESTful API built using Node.js, Express, and MongoDB that allows users to sig
 ├── .env
 ├── server.js
 └── README.md
+```
 
 ## ⚙️ Setup Instructions
 
