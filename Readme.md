@@ -140,7 +140,7 @@ curl --location 'http://localhost:5000/api/search?query=jame' \
 ```
 # 🧪 Example Workflow
 - Sign up a user
-- Log in → copy token
+- Log in → copy the jwt token
 - Add a book using that token
 - Get the book ID
 - Post a review using the book ID
