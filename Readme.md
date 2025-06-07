@@ -10,7 +10,7 @@ A RESTful API built using Node.js, Express, and MongoDB that allows users to sig
 - Get book details including average rating & paginated reviews
 - Search books by title or author (partial & case-insensitive)
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - Backend: Node.js, Express.js
 - Database: MongoDB with Mongoose
@@ -47,20 +47,25 @@ A RESTful API built using Node.js, Express, and MongoDB that allows users to sig
    cd book-review-api
    ```
 2. Install Dependencies
+   ```bash
    npm install
-
-3. Configure .env
-   Create a .env file at root and add:
+   ```
+4. Configure .env
+   - Create a .env file at root and add:
+   ```bash
    PORT=5000
    MONGODB_URI=mongodb://127.0.0.1:27017/book-review-db
    JWT_SECRET=your_jwt_secret
-4. Start the server:
+   ```
+6. Start the server:
+   ```bash
    npm run dev
+   ```
 
-Sample CURL requests are below
+# Sample CURL requests are below
 
-# Signup
-
+## Signup
+```bash
 curl --location 'http://localhost:5000/api/signup' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -69,9 +74,10 @@ curl --location 'http://localhost:5000/api/signup' \
 "password": "test12345"
 }
 '
+```
 
-# Login
-
+## Login
+```bash
 curl --location 'http://localhost:5000/api/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -79,9 +85,10 @@ curl --location 'http://localhost:5000/api/login' \
 "password": "test12345"
 }
 '
+```
 
-# Add Book (replace <token>)
-
+## Add Book (replace <token>)
+```bash
 curl --location 'http://localhost:5000/api/books' \
 --header 'Authorization: Bearer <your_token>' \
 --header 'Content-Type: application/json' \
@@ -91,17 +98,17 @@ curl --location 'http://localhost:5000/api/books' \
 "genre": "Fiction",
 "publishedYear": 2023
 }'
-
-# Get all books
-
+```
+## Get all books
+```bash
 curl --location 'http://localhost:5000/api/books?page=2&limit=5'
-
-# Get all books with author 7 genre filter
-
-http://localhost:5000/api/books?page=1&limit=5&author=James&genre=Self
-
-# Add book review
-
+```
+## Get all books with author 7 genre filter
+```bash
+curl --location 'http://localhost:5000/api/books?page=1&limit=5&author=James&genre=Self'
+```
+## Add book review
+```bash
 curl --location 'http://localhost:5000/api/books/684390d0a5bf865c6dcaffa5/reviews' \
 --header 'Authorization: Bearer <your-tokken>' \
 --header 'Content-Type: application/json' \
@@ -109,9 +116,9 @@ curl --location 'http://localhost:5000/api/books/684390d0a5bf865c6dcaffa5/review
 "rating": 5,
 "comment": "Amazing read!"
 }'
-
-# update your review
-
+```
+## update your review
+```bash
 curl --location --request PUT 'http://localhost:5000/api/reviews/6843927ba5bf865c6dcaffb4' \
 --header 'Authorization: Bearer <your-token>' \
 --header 'Content-Type: application/json' \
@@ -119,54 +126,57 @@ curl --location --request PUT 'http://localhost:5000/api/reviews/6843927ba5bf865
 "rating": 5,
 "comment": "veryr very good read!"
 }'
-
-# Delete your review
-
+```
+## Delete your review
+```bash
 curl --location --request DELETE 'http://localhost:5000/api/reviews/6843927ba5bf865c6dcaffb4' \
 --data ''
-
-# search book
-
+```
+## search book
+```bash
 curl --location 'http://localhost:5000/api/search?query=jame' \
 --data ''
+```
+# 🧪 Example Workflow
+- Sign up a user
+- Log in → copy token
+- Add a book using that token
+- Get the book ID
+- Post a review using the book ID
+- Get that book to see rating + reviews
+- Update or delete the review
+- Try filters and search
 
-🧪 Example Workflow
-Sign up a user
-Log in → copy token
-Add a book using that token
-Get the book ID
-Post a review using the book ID
-Get that book to see rating + reviews
-Update or delete the review
-Try filters and search
+# 🧠 Design Decisions
+- JWT-based Authentication: Lightweight and stateless for scalability.
+- Pagination & Filtering: Efficient for large datasets.
+- Modular Code Structure: Easy to maintain and scale.
+- Regex Search: Case-insensitive & partial match supported.
 
-🧠 Design Decisions
-JWT-based Authentication: Lightweight and stateless for scalability.
-
-Pagination & Filtering: Efficient for large datasets.
-
-Modular Code Structure: Easy to maintain and scale.
-
-Regex Search: Case-insensitive & partial match supported.
-
-🗂️ Database Schema
+# 🗂️ Database Schema
 🧑‍💻 User
+```bash
 {
 "name": "String",
 "email": "String (unique)",
 "password": "Hashed"
 }
+```
 📚 Book
+```bash
 {
 "title": "String",
 "author": "String",
 "genre": "String",
 "publishedYear": "Number"
 }
+```
 ✍️ Review
+```bash
 {
 "book": "ObjectId (Book)",
 "user": "ObjectId (User)",
 "rating": "Number (1 to 5)",
 "comment": "String"
 }
+```
