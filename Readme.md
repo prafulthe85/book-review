@@ -155,7 +155,11 @@ curl --location 'http://localhost:5000/api/search?query=jame' \
 
 # ER Diagram
 
-https://github.com/user-attachments/assets/f36e01a0-35e1-40b1-b75b-5343ed8756a5
+- Schema
+![image](https://github.com/user-attachments/assets/6cf02044-fe2c-46f8-bfc0-dacd7f297ab8)
+
+- SignUp/loginflow (Drwa.io)
+![image](https://github.com/user-attachments/assets/8a816d23-625b-402b-a5d3-10084eccd730)
 
 # 🗂️ Database Schema
 🧑‍💻 User
