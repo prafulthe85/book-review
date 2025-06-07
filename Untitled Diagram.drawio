@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="hFIVYPibdmK-dtFTB5V8">
+    <mxGraphModel dx="2379" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WnbSG1edf20pGGd3hCOF-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-1" target="WnbSG1edf20pGGd3hCOF-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-1" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;User (Client)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-8" target="WnbSG1edf20pGGd3hCOF-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-8" value="POST /signup" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-9" target="WnbSG1edf20pGGd3hCOF-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-9" value="Response: User Created" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="755" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-11" target="WnbSG1edf20pGGd3hCOF-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-11" target="WnbSG1edf20pGGd3hCOF-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="564.1851851851852" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="564" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-11" value="authController.signup()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="230" width="206" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-16" value="Sends&lt;div&gt;Request&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-17" target="WnbSG1edf20pGGd3hCOF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-17" value="MongoDB → users" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="760" y="220" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-18" value=" INSERT&amp;nbsp;&lt;div&gt;new user&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="240" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-27" target="WnbSG1edf20pGGd3hCOF-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="40" />
+              <mxPoint x="90" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-27" value="POST /login" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WnbSG1edf20pGGd3hCOF-36" target="WnbSG1edf20pGGd3hCOF-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="20" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="855" y="60" />
+              <mxPoint x="345" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-36" value="MongoDB → users&lt;div&gt;(findOne)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="800" y="90" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-40" value="generated JWT token" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="28" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-44" value="Response JWT token" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="8" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WnbSG1edf20pGGd3hCOF-46" value="SgnUp/Login Flow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
