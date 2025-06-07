@@ -153,6 +153,10 @@ curl --location 'http://localhost:5000/api/search?query=jame' \
 - Modular Code Structure: Easy to maintain and scale.
 - Regex Search: Case-insensitive & partial match supported.
 
+# ER Diagram
+
+https://github.com/user-attachments/assets/f36e01a0-35e1-40b1-b75b-5343ed8756a5
+
 # 🗂️ Database Schema
 🧑‍💻 User
 ```bash
